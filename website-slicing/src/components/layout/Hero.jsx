@@ -4,7 +4,7 @@ import Mockup from "../../assets/mockup-phone.svg";
 
 export function Hero() {
   return (
-    <div className="flex flex-row py-12 lg:px-32 px-8 h-[37rem] sm:h-[29rem] bg-gray-50 overflow-y-hidden overflow-x-hidden">
+    <div className="w-full flex flex-row py-12 lg:px-32 px-8 h-[37rem] bg-gray-50 overflow-y-hidden overflow-x-hidden">
       <div className="flex flex-col z-20 text-black-secondary-hangry font-bold gap-8 py-14 lg:py-28 ">
         <div className="flex flex-col gap-4">
           <h6 className="text-sm lg:text-xl">Kamu lapar atau haus?</h6>
@@ -19,7 +19,7 @@ export function Hero() {
       </div>
       <div>
         <img
-          className="absolute sm:left-80 md:left-[350px] lg:left-16 lg:relative lg:w-[850px] sm:w-2/5 w-[18rem] z-0 left-52 sm:z-0 "
+          className="relative md:left-[350px] lg:left-16 lg:relative lg:w-[850px] sm:left-[8rem] sm:w-[250rem] z-0 left-10 sm:z-0 mt-10 w-[70rem]"
           src={Mockup}
           alt="Mockup iPhone"
         />
