@@ -9,6 +9,7 @@ module.exports = {
         "red-hangry" : "#A30926",
         "black-hangry" : "#303030",
         "black-secondary-hangry" : "#707070",
+        "gray-hangry": "#5A5A5A",
       }
     },
   },

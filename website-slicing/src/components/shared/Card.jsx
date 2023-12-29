@@ -1,87 +1,75 @@
 import React from "react";
-import AyamKoploFood from "../../assets/ayam-koplo-foods.png";
-import AyamKoploLogo from "../../assets/ayam-koplo-logo.png";
-import SangyuFood from "../../assets/sangyu-foods.png";
-import SangyuLogo from "../../assets/sangyu-logo.png";
-import NasiAyamBudeSariFood from "../../assets/nasi-ayam-bude-sari-foods.png";
-import NasiAyamBudeSariLogo from "../../assets/nasi-ayam-bude-sari-logo.png";
-import KopiDariPadaFood from "../../assets/kopi-dari-pada-foods.png";
-import KopiDariPadaLogo from "../../assets/kopi-dari-pada-logo.png";
+
+import AyamKoplo from '../../assets/ayam-koplo.png';
+import Sangyu from '../../assets/sangyu.png';
+import BudeSari from '../../assets/nasi-ayam-bude-sari.png';
+import KopiDaripada from '../../assets/kopi-daripada.png';
 import { FaArrowRight } from "react-icons/fa6";
 
 export function Card() {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 md:my-10 my-4">
-      <div className="relative inline-block" id="card-1">
+    <div className=" bg-white flex flex-row justify-center lg:flex-nowrap flex-wrap gap-8 lg:gap-6 2xl:gap-36 py-4">
+      <div className="flex flex-col gap-4">
         <img
-          src={AyamKoploLogo}
-          alt="Ayam Koplo Logo"
-          className="z-20 absolute -top-2 md:top-0 left-7 mt-7 md:h-16 h-8"
+          className="w-[180px] h-[190px] lg:h-full lg:w-full"
+          src={AyamKoplo}
+          alt="ayam koplo"
         />
-        <img
-          src={AyamKoploFood}
-          alt="Ayam Koplo Foods"
-          className="z-10 relative md:right-6 md:w-3/4"
-        />
-        <div className="flex items-center space-x-3 ">
-          <h3 className="font-bold md:text-xl text-xs ml-5">Ayam Koplo</h3>
-          <FaArrowRight className="text-red-hangry" size={"1em"} />
+        <div>
+          <div className="flex flex-row gap-2">
+            <h3 className="font-bold text-sm lg:text-2xl">Ayam Koplo</h3>
+            <FaArrowRight className="text-red-hangry text-sm lg:text-xl mt-1 lg:mt-2" />
+          </div>
+          <h6 className="text-[10px] lg:text-lg text-gray-hangry">
+            Ayam Geprek &middot; Indonesia
+          </h6>
         </div>
-        <p className="ml-5 md:text-[0.75rem] text-[0.55rem] sm:text-[0.65rem] w-full">Ayam Geprek &middot; Indonesia</p>
       </div>
-
-      <div className="relative inline-block" id="card-2">
+      <div className="flex flex-col gap-4">
         <img
-          src={SangyuLogo}
-          alt="Sangyu Logo"
-          className="z-20 absolute -top-2 md:top-0 left-7 mt-7 md:h-16 h-8"
+          className="w-[180px] h-[190px] lg:h-full lg:w-full"
+          src={Sangyu}
+          alt="san gyu"
         />
-        <img
-          src={SangyuFood}
-          alt="Sangyu Foods"
-          className="z-10 relative md:right-9 md:w-1/2"
-        />
-        <div className="flex items-center space-x-3">
-          <h3 className="font-bold md:text-xl text-xs ml-5">San Gyu</h3>
-          <FaArrowRight className="text-red-hangry" size={"1em"} />
+        <div>
+          <div className="flex flex-row gap-2">
+            <h3 className="font-bold text-sm lg:text-2xl">San Gyu</h3>
+            <FaArrowRight className="text-red-hangry text-sm lg:text-xl mt-1 lg:mt-2" />
+          </div>
+          <h6 className="text-[10px] lg:text-lg text-gray-hangry">
+            Beef Bowl &middot; Jepang
+          </h6>
         </div>
-        <p className="ml-5 md:text-[0.75rem] text-[0.55rem] sm:text-[0.65rem] w-full">BeefBowl &middot; Jepang</p>
       </div>
-
-      <div className="relative inline-block" id="card-3">
+      <div className="flex flex-col gap-4">
         <img
-          src={NasiAyamBudeSariLogo}
-          alt="Nasi Ayam Bude Sari Logo"
-          className="z-20 absolute -top-2 md:top-0 left-7 mt-7 md:h-16 h-8"
+          className="w-[180px] h-[190px] lg:h-full lg:w-full"
+          src={BudeSari}
+          alt="bude sari"
         />
-        <img
-          src={NasiAyamBudeSariFood}
-          alt="Nasi Ayam Bude Sari Foods"
-          className="z-10 relative md:right-9 md:w-1/2"
-        />
-        <div className="flex items-center space-x-3">
-          <h3 className="font-bold md:text-xl text-xs ml-5">Bude Sari</h3>
-          <FaArrowRight className="text-red-hangry" size={"1em"} />
+        <div>
+          <div className="flex flex-row gap-2">
+            <h3 className="font-bold text-sm lg:text-2xl">Bude Sari</h3>
+            <FaArrowRight className="text-red-hangry text-sm lg:text-xl mt-1 lg:mt-2 hover:scale-110" />
+          </div>
+          <h6 className="text-[10px] lg:text-lg text-gray-hangry">
+            Nasi Ayam &middot; Indonesia{" "}
+          </h6>
         </div>
-        <p className="ml-5 md:text-[0.75rem] text-[0.55rem] sm:text-[0.65rem] w-full">Nasi Ayam &middot; Indonesia</p>
       </div>
-
-      <div className="relative inline-block sm:hidden lg:hidden md:hidden" id="card-4">
+      <div className="flex md:hidden flex-col gap-4">
         <img
-          src={KopiDariPadaLogo}
-          alt="Kopi Dari Pada Logo"
-          className="z-20 absolute -top-2 md:top-0 left-7 mt-7 md:h-16 h-8"
+          className="hover:scale-110 w-[180px]"
+          src={KopiDaripada}
+          alt="bude sari"
         />
-        <img
-          src={KopiDariPadaFood}
-          alt="Kopi Dari Pada Foods"
-          className="z-10 relative md:right-9 md:w-96 w-52"
-        />
-        <div className="flex items-center space-x-3">
-          <h3 className="font-bold md:text-xl text-xs ml-5">Kopi Dari|Pada</h3>
-          <FaArrowRight className="text-red-hangry" size={"1em"} />
+        <div>
+          <div className="flex flex-row gap-2">
+            <h3 className="font-bold text-s,">Kopi Dari|Pada</h3>
+            <FaArrowRight className="text-red-hangry text-sm mt-1 hover:scale-110" />
+          </div>
+          <h6 className="text-[10px] text-gray-hangry">Minuman &middot; Indonesia</h6>
         </div>
-        <p className="ml-5 md:text-[0.75rem] text-[0.55rem] sm:text-[0.65rem] w-full">Minuman &middot; Indonesia</p>
       </div>
     </div>
   );
